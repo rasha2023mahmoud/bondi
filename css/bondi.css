@@ -1,0 +1,266 @@
+body {
+font-family: 'Roboto', sans-serif;
+height: 1000px;
+}
+:root {
+    --dark-color: #000080;
+    --white-color: #FFFFFF;	
+    --green-color: #40E0D0;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+.main-btn {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    padding: 0.5rem 2rem;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    text-decoration: none
+}
+.main-btn:hover {
+    color: var(--yellow-color);
+}
+.main-title:after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color: var(--green-color);
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+/* start nav */
+.navbar-expand-lg {
+    background-color: var(--dark-color);
+}
+.container .navbar-brand img {
+    width: 48px;
+    height: 48px;
+}
+.navbar-expand-lg .navbar-collapse .navbar-nav .nav-item .nav-link {
+    color: var(--white-color)
+}
+.navbar-expand-lg .navbar-collapse .navbar-nav .nav-item .nav-link.active,
+.navbar-expand-lg .navbar-collapse .navbar-nav .nav-item .nav-link:focus,
+.navbar-expand-lg .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+    color: var(--green-color)
+}
+.navbar-expand-lg .search {
+    border-left: 2px solid var(--green-color)
+}
+.navbar-expand-lg .search svg{
+    color: var(--green-color)
+}
+.navbar-expand-lg .navbar-toggler {
+    border: 1px solid var(--white-color);
+}
+.navbar-expand-lg .navbar-toggler:focus {
+    box-shadow: 0 0 10px var(--white-color);
+}
+.navbar-expand-lg .navbar-toggler[aria-expanded="true"] {
+    border-color: var(--green-color)
+} 
+.navbar-expand-lg .login {
+    padding-left: 10px;
+    margin-left: 10px;
+    background-color: var(--green-color)
+}
+/* end nav */
+/* start landing section */
+.landing {
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 74px);
+
+}
+/* end landing section */
+/* start featured section */
+.featured .icon-holder {
+    height: 200px
+}
+.feat .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.featured .number {
+    color: var(--section-color);
+    font-size: 12rem;
+}
+.featured .icon {
+    color: var(--green-color)
+}
+.featured h4 {
+    color: var(--yellow-color)
+}
+/* end featured section */
+/* start our work */
+.our-work {
+    background-color: var(--section-color);
+}
+.our-work ul .active {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    padding: 0.5rem 1rem;
+    transition: 0.3s;
+}
+.our-work ul li{
+    padding: 0.5rem 1rem;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.our-work ul li:not(.active):hover {
+background-color: var(--red-color);
+color: var(--yellow-color)
+}
+/* .our-work .row {
+    gap: 30px
+} */
+.our-work .box {
+padding: 5px;
+overflow: hidden;
+position: relative;
+}
+.our-work .box img {
+    width: 250px;
+    height: 200px
+}
+.our-work .box:before {
+    content: attr(data-work);
+    position: absolute;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color:rgb(204 221 219 / 57%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transform: translateX(calc(-100% - 5px));
+    -webkit-transform: translateX(calc(-100% - 5px));
+    -moz-transform: translateX(calc(-100% - 5px));
+    -ms-transform: translateX(calc(-100% - 5px));
+    -o-transform: translateX(calc(-100% - 5px));
+}
+.our-work .box:hover::before {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+/* end our work */
+/* start stuff */
+.stuff .description {
+    max-width: 500px;
+}
+/* end stuff */
+/* start team section */
+.team {
+    background-color: var(--section-color);
+}
+.team h2 {
+    color: var(--yellow-color)
+}
+.team h4 {
+background-color: var(--green-color);
+}
+/* end team section */
+/* start project */
+.project {
+    background-color: var(--dark-color)
+}
+/* end project */
+/* start subscribe */
+.subscribe {
+    background-color: var(--yellow-color)
+}
+.subscribe input[type="text"]:focus {
+    outline: none;
+}
+.subscribe input[type="text"] {
+    border: none;
+    border-bottom: 1px solid white;
+}
+.subscribe ::placeholder {
+    color: white
+}
+.subscribe input[type="submit"] {
+    background-color: var(--dark-color);
+    color: var(--yellow-color)
+}
+/* end subscribe */
+/* start footer */
+footer {
+    background-color: var(--dark-color)
+}
+footer img {
+    width: 64px;
+    height: 64px;
+}
+footer .contact a {
+    background-color: var(--yellow-color);
+    color: var(--red-color);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+footer .contact a:hover {
+    background-color: var(--yellow-color);
+    color: var(--red-color)
+}
+footer .copyright > span {
+    color: var(--green-color);
+}
+footer .copyright div span {
+    color: var(--yellow-color)
+}
+footer .contact ul svg {
+    width: 20px;
+    height: 20px;
+}
+footer  .facebook {
+    background-color: #1877f2
+} 
+footer .twitter {
+    background-color: #1da1f2
+}
+footer .instgram {
+    background-color: #e1306c
+}
+footer .pintrest {
+    background-color: #e60023
+}
+/* end footer */
